@@ -1,6 +1,13 @@
 from flask import Flask, jsonify, request
 import flask_basicauth
-from ..models.movie_recommender import MovieRecommender as MR
+import sys
+import os
+
+# Adiciona o diretório 'src' ao caminho de busca de módulos do Python
+sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), '..', '..')))
+
+# Agora você pode importar o módulo 'movie_recommender.py' normalmente
+from src.models.movie_recommender import MovieRecommender as MR
 
 app = Flask(__name__)
 app.config['BASIC_AUTH_USERNAME'] = 'conik'
