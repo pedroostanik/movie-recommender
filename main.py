@@ -10,8 +10,8 @@ sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), '..', '.
 from src.models.movie_recommender import MovieRecommender as MR
 
 app = Flask(__name__)
-app.config['BASIC_AUTH_USERNAME'] = 'conik'
-app.config['BASIC_AUTH_PASSWORD'] = '12345678'
+app.config['BASIC_AUTH_USERNAME'] = os.environ.get('BASIC_AUTH_USERNAME')
+app.config['BASIC_AUTH_PASSWORD'] = os.environ.get('BASIC_AUTH_PASSWORD')
 
 basic_auth = flask_basicauth.BasicAuth(app)
 
