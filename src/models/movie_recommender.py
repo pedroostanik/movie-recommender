@@ -5,8 +5,8 @@ import pickle
 class MovieRecommender():
 
     def __init__(self):
-        self.movies = pd.read_csv('C:/Users/pedro/OneDrive/Documentos/alura/curso_deploy_MLOps/curso_mlops/data/raw/movies.csv')
-        self.ratings = pd.read_csv('C:/Users\pedro/OneDrive/Documentos/alura/curso_deploy_MLOps/curso_mlops/data/raw/ratings.csv')
+        self.movies = pd.read_csv('../../data/raw/movies.csv')
+        self.ratings = pd.read_csv('../../data/raw/ratings.csv')
         self.movies.set_index('movieId')
         self.ratings.set_index('userId')
 
