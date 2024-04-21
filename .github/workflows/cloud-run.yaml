@@ -19,7 +19,7 @@ on:
   jobs:
     setup-build-deploy:
       name: Setup, Build, and Deploy
-      run-ons: ubuntu-latest
+      runs-ons: ubuntu-latest
 
       steps:
       - name: Checkout
@@ -38,7 +38,7 @@ on:
             gcloud builds submit \
               --quiet \
               --config cloudbuild.yaml \
-              --substitutions _BASIC_AUTH_USERNAME= $BASIC_AUTH_USERNAME, _BASIC_AUTH_PASSWORD= $BASIC_AUTH_PASSWORD, _IMAGE_TAG=gcr.io/$PROJECT_ID/$SERVICE_NAME:$GITHUB_SHA
+              --substitutions _BASIC_AUTH_USERNAME= $BASIC_AUTH_USERNAME,_BASIC_AUTH_PASSWORD=$BASIC_AUTH_PASSWORD,_IMAGE_TAG=gcr.io/$PROJECT_ID/$SERVICE_NAME:$GITHUB_SHA
 
         # Deploy image to Cloud Run
         - name: Deploy
