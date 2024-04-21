@@ -1,12 +1,16 @@
 import pandas as pd
 import numpy as np
 import pickle
+import os
 
 class MovieRecommender():
 
     def __init__(self):
-        self.movies = pd.read_csv('C:\\Users\\pedro\\OneDrive\\Documentos\\alura\\curso_deploy_MLOps\\curso_mlops\\data\\raw\\movies.csv')
-        self.ratings = pd.read_csv('C:\\Users\\pedro\\OneDrive\\Documentos\\alura\\curso_deploy_MLOps\\curso_mlops\\data\\raw\\ratings.csv')
+        ratings_path = os.path.join(os.path.dirname(__file__), '../../data/raw/ratings.csv')
+        movies_path = os.path.join(os.path.dirname(__file__), '../../data/raw/movies.csv')
+
+        self.ratings = pd.read_csv(ratings_path)
+        self.movies = pd.read_csv(movies_path)
         self.movies.set_index('movieId')
         self.ratings.set_index('userId')
 
