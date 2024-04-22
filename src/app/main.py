@@ -19,7 +19,7 @@ columns = ["movieId", "rating"]
 
 @app.route('/')
 def core():
-    return "My API!"
+    return "My automatic API!"
 
 @app.route('/moviesList')
 def movies_list():
