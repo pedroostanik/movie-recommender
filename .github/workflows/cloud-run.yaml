@@ -32,6 +32,10 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
+
+    - name: Set Python for Google Cloud SDK
+      run: echo "CLOUDSDK_PYTHON=/usr/bin/python3" >> $GITHUB_ENV
+
     - name: Checkout
       uses: actions/checkout@v2
 
