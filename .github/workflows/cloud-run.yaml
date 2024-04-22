@@ -33,11 +33,15 @@ jobs:
 
     steps:
 
-    - name: Export gcloud related env variable
-      run: export CLOUDSDK_PYTHON="/usr/bin/python3"
-
     - name: Checkout
       uses: actions/checkout@v2
+
+    - name: Setup gcloud CLI
+      run: |
+        export CLOUDSDK_PYTHON=/usr/bin/python3
+        gcloud --quiet config set project "${{ secrets.RUN_PROJECT }}"
+      env:
+        CLOUDSDK_CORE_DISABLE_PROMPTS: 1
 
     - uses: google-github-actions/setup-gcloud@v0
       with:
