@@ -33,16 +33,17 @@ jobs:
 
     steps:
 
-    - name: Set Python for Google Cloud SDK
-      run: echo "CLOUDSDK_PYTHON=/usr/bin/python3" >> $GITHUB_ENV
+    - name: Setup python
+      uses: actions/setup-python@v4
+      with:
+      python-version: '3.9'
+
+    - name: Export gcloud related env variable
+      run: export CLOUDSDK_PYTHON="/usr/bin/python3"
 
     - name: Checkout
       uses: actions/checkout@v2
-      
-    - run: |
-      sudo apt-get install python3.11
-      export CLOUDSDK_PYTHON="/usr/bin/python3"
-
+    
     # Setup gcloud CLI
     - uses: google-github-actions/setup-gcloud@v0
       with:
