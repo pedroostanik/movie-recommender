@@ -38,12 +38,6 @@ jobs:
 
     - name: Checkout
       uses: actions/checkout@v2
-    
-    # Setup gcloud CLI
-    - name: Set up Python
-        uses: actions/setup-python@v3
-        with:
-          python-version: '3.11'
 
     - uses: google-github-actions/setup-gcloud@v0
       with:
