@@ -27,7 +27,6 @@ env:
   BASIC_AUTH_PASSWORD: ${{ secrets.BASIC_AUTH_PASSWORD }}
 
 jobs:
-
   setup-build-deploy:
     name: Setup, Build, and Deploy
     runs-on: ubuntu-latest
