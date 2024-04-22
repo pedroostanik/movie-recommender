@@ -34,18 +34,17 @@ jobs:
     steps:
 
     - name: Checkout
-      uses: actions/checkout@v2
+      uses: actions/checkout@v2      
 
-    - name: Setup gcloud CLI
-      run: |
-        export CLOUDSDK_PYTHON=/usr/bin/python3
-        gcloud --quiet config set project "${{ secrets.RUN_PROJECT }}"
-      env:
-        CLOUDSDK_CORE_DISABLE_PROMPTS: 1
-
-    - uses: google-github-actions/setup-gcloud@v0
+    - name: Set up Python
+      uses: actions/setup-python@v4
       with:
-        version: '290.0.1'
+        python-version: '3.9'
+
+    - name: Set up Cloud Run
+      uses: google-github-actions/setup-gcloud@v0
+      with:
+        version: '318.0.0'
         service_account_key: ${{ secrets.RUN_SA_KEY }}
         project_id: ${{ secrets.RUN_PROJECT }}
 
