@@ -44,7 +44,7 @@ def avaliate_movie():
     movieRec.insert_ratings(dados)
     return "success"
 
-@app.route('/indicateMovieByMovie/<movieId', methods = ['GET'])
+@app.route('/indicateMovieByMovie/<movieId>', methods = ['GET'])
 @basic_auth.required
 def indicate_movie_by_movie(movieId):
     movieRec = MR()
