@@ -75,6 +75,24 @@ class MovieRecommender():
         final_movies = movies_that_my_equal_liked.sort_values(by=['rating_media_dos_usuarios', 'rating_aparicoes_nos_usuarios'], ascending=False)
         final_movies = final_movies.join(self.movies.set_index('movieId')).dropna()
         return final_movies.drop(movies_ive_watch, errors='ignore').head(max_number_of_movies)
+
+    def indicate_movie_by_movie(self, movie_id, number_of_equals=10):
+        movie_genre = self.movies.query(f"movieId=={movie_id}")['genres'].iloc[0]
+        movies_by_equals = self.ratings.query(f"movieId=={movie_id}").sort_values('rating', ascending=False)
+        movies_by_equals = movies_by_equals.head(number_of_equals)['userId'].to_list()
+
+        new_df = pd.DataFrame(columns=['userId', 'movieId', 'rating', 'timestamp'])
+        for id in movies_by_equals:
+            temp_df = self.ratings.query(f'userId=={id}')            
+            new_df = pd.concat([new_df, temp_df])
+        new_df = new_df.sort_values('rating', ascending=False)
+        new_df = new_df.groupby('movieId').mean()[['rating']]
+        gathered_df = self.movies.set_index('movieId').join(new_df, lsuffix="_left",rsuffix="_right").dropna()
+        gathered_df = gathered_df.query(f"genres=='{movie_genre}'")
+        return gathered_df
+
+
+
     
 new_user = [
     {
@@ -97,4 +115,5 @@ new_user = [
 
 if (__name__ == "__main__"):
     mr = MovieRecommender()
-    print(mr.execute(11111))
+    # print(mr.execute(11111))
+    print(mr.indicate_movie_by_movie(1))
