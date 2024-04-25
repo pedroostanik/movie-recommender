@@ -181,9 +181,6 @@ class SurpriseRecommender():
         print('Average MAE:', cv_results['test_mae'].mean()) 
 
 
-SR = SurpriseRecommender()
-recommended_movies = SR.execute_knn(5)
 
-print(f'recommended_movies: {recommended_movies}')
 
 
