@@ -14,8 +14,8 @@ COPY ./requirements.txt /usr/requirements.txt
 
 WORKDIR /usr
 
-RUN pip3 install -r requirements.txt
 RUN pip3 install scikit-surprise
+RUN pip3 install -r requirements.txt
 
 COPY ./src /usr/src
 COPY ./models /usr/models
