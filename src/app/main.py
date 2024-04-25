@@ -8,6 +8,7 @@ sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), '..', '.
 
 # Agora você pode importar o módulo 'movie_recommender.py' normalmente
 from src.models.movie_recommender import MovieRecommender as MR
+from src.models.surprise_recommender import SurpriseRecommender as SR
 
 app = Flask(__name__)
 app.config['BASIC_AUTH_USERNAME'] = os.environ.get('BASIC_AUTH_USERNAME')
@@ -32,8 +33,8 @@ def movies_list():
 @basic_auth.required
 def indicate_movies(userId):
     # dados = request.get_json()    
-    movieRec = MR()
-    indicated_movies = movieRec.execute(userId)
+    movieRec = SR()
+    indicated_movies = movieRec.execute_knn(userId)
     indicated_movies_dict = indicated_movies.to_dict(orient='records')
     return jsonify(indicated_movies_dict)
 

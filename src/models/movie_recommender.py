@@ -86,13 +86,7 @@ class MovieRecommender():
             temp_df = self.ratings.query(f'userId=={id}')            
             new_df = pd.concat([new_df, temp_df])
         new_df = new_df.sort_values('rating', ascending=False)
-
-        #Removing targe id
-        new_df = new_df.drop(new_df[new_df['movieId']==movie_id].index)
-        
         new_df = new_df.groupby('movieId').mean()[['rating']]
-        new_df = new_df.query('rating>3.8')
-        new_df = new_df.sort_values('rating', ascending=False)
         gathered_df = self.movies.set_index('movieId').join(new_df, lsuffix="_left",rsuffix="_right").dropna()
         gathered_df = gathered_df.query(f"genres=='{movie_genre}'")
         return gathered_df
