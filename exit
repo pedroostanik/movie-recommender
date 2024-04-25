@@ -1,0 +1,275 @@
+[33mcommit 56dcf054f8350d5dc03504e611b565915b580d02[m[33m ([m[1;36mHEAD[m[33m -> [m[1;32mmaster[m[33m)[m
+Author: Pedro Ostanik <pedro.ostanik@join4.com.br>
+Date:   Thu Apr 25 09:26:15 2024 -0300
+
+    db update
+
+[33mcommit aedc8f88af82cb26997f8ab5a7740115d56e1b23[m
+Author: Pedro Ostanik <pedro.ostanik@join4.com.br>
+Date:   Thu Apr 25 09:13:40 2024 -0300
+
+    db update
+
+[33mcommit a0b7afadb6c5d63fde59c47cf2832258eebfa4c8[m
+Author: Pedro Ostanik <pedro.ostanik@join4.com.br>
+Date:   Thu Apr 25 09:07:15 2024 -0300
+
+    db update
+
+[33mcommit 3c7a3b99dcc05b1929241a4835f23ee5a7ab81ba[m
+Author: Pedro Ostanik <pedro.ostanik@join4.com.br>
+Date:   Tue Apr 23 08:44:31 2024 -0300
+
+    complete movies
+
+[33mcommit 783a2e884686f2188bbfdfdf7c94ac5e4d4246b3[m[33m ([m[1;31morigin/master[m[33m)[m
+Author: Pedro Ostanik <pedro.ostanik@join4.com.br>
+Date:   Mon Apr 22 19:34:57 2024 -0300
+
+    new method
+
+[33mcommit 292ceabc9d21f744a64c0880683534241e7e9128[m
+Author: Pedro Ostanik <pedro.ostanik@join4.com.br>
+Date:   Mon Apr 22 19:29:18 2024 -0300
+
+    new method
+
+[33mcommit 71115a34173f216c0ec809c2623adc09c8b842b4[m
+Author: Pedro Ostanik <pedro.ostanik@join4.com.br>
+Date:   Mon Apr 22 14:50:49 2024 -0300
+
+    att
+
+[33mcommit c1bd7e6254e7a6a378b6f0b31cf097906380f4a2[m
+Author: Pedro Ostanik <pedro.ostanik@join4.com.br>
+Date:   Mon Apr 22 14:45:37 2024 -0300
+
+    att
+
+[33mcommit 7f9630222686edf10ecb4dfe02825eee4068a7db[m
+Author: Pedro Ostanik <pedro.ostanik@join4.com.br>
+Date:   Mon Apr 22 14:39:07 2024 -0300
+
+    att
+
+[33mcommit c9f66efb4863399f048119e29191c648b7bedeaa[m
+Author: Pedro Ostanik <pedro.ostanik@join4.com.br>
+Date:   Mon Apr 22 14:36:52 2024 -0300
+
+    att
+
+[33mcommit fd92e78235f128fa4a41ef5059978bbdb2555a56[m
+Author: Pedro Ostanik <pedro.ostanik@join4.com.br>
+Date:   Mon Apr 22 11:53:00 2024 -0300
+
+    att
+
+[33mcommit 3ce66bfcb8556767452ddffcb9ef8421df636b83[m
+Author: Pedro Ostanik <pedro.ostanik@join4.com.br>
+Date:   Mon Apr 22 09:18:26 2024 -0300
+
+    att
+
+[33mcommit ff397272f721d8bf4649935e2135d8ac35a9ef21[m
+Author: Pedro Ostanik <pedro.ostanik@join4.com.br>
+Date:   Mon Apr 22 08:52:24 2024 -0300
+
+    att
+
+[33mcommit 3bda679c69cdafa5a8754b032bfff3b49afc6347[m
+Author: Pedro Ostanik <pedro.ostanik@join4.com.br>
+Date:   Mon Apr 22 08:39:56 2024 -0300
+
+    att
+
+[33mcommit fd6ef0506a7cf9805abb6ec650c8c43c3537e8c9[m
+Author: Pedro Ostanik <pedro.ostanik@join4.com.br>
+Date:   Mon Apr 22 01:23:10 2024 -0300
+
+    att
+
+[33mcommit e3b39fd0f8d2636acdae43abbbf40d7d8fee89f1[m
+Author: Pedro Ostanik <pedro.ostanik@join4.com.br>
+Date:   Mon Apr 22 01:22:01 2024 -0300
+
+    att
+
+[33mcommit f01957b899891b5c136bc4d007ccb45de4adc025[m
+Author: Pedro Ostanik <pedro.ostanik@join4.com.br>
+Date:   Mon Apr 22 01:16:07 2024 -0300
+
+    att
+
+[33mcommit a0e46b24a7b8480cffce861c66130c49b31dd358[m
+Author: Pedro Ostanik <pedro.ostanik@join4.com.br>
+Date:   Mon Apr 22 01:09:28 2024 -0300
+
+    att
+
+[33mcommit a458f74e9e2456c1bb08d1773680224bc5247630[m
+Author: Pedro Ostanik <pedro.ostanik@join4.com.br>
+Date:   Mon Apr 22 01:06:19 2024 -0300
+
+    att
+
+[33mcommit 146d2f89171fcfff1022f96467bafc5b1d666e41[m
+Author: Pedro Ostanik <pedro.ostanik@join4.com.br>
+Date:   Mon Apr 22 01:03:08 2024 -0300
+
+    att
+
+[33mcommit eb83c073910603c2eba24f32058b8ed1bb58f74b[m
+Author: Pedro Ostanik <pedro.ostanik@join4.com.br>
+Date:   Mon Apr 22 01:02:22 2024 -0300
+
+    att
+
+[33mcommit 80309274870e0f11fd75aa522c59c4f09571e8a3[m
+Author: Pedro Ostanik <pedro.ostanik@join4.com.br>
+Date:   Mon Apr 22 01:01:32 2024 -0300
+
+    att
+
+[33mcommit 47f2e50d961e9ff4a94a4290a02e3b7730b8cb22[m
+Author: Pedro Ostanik <pedro.ostanik@join4.com.br>
+Date:   Mon Apr 22 00:59:38 2024 -0300
+
+    att
+
+[33mcommit 7c77d98b394f98f76efa2aca3bb318f31368987f[m
+Author: Pedro Ostanik <pedro.ostanik@join4.com.br>
+Date:   Mon Apr 22 00:58:27 2024 -0300
+
+    att
+
+[33mcommit 1ec3ddfc614025f583cd29acd5965b0f8584c305[m
+Author: Pedro Ostanik <pedro.ostanik@join4.com.br>
+Date:   Mon Apr 22 00:06:49 2024 -0300
+
+    att
+
+[33mcommit 0a24dfe87d4e4492f368aaac76219514d2a245ce[m
+Author: Pedro Ostanik <pedro.ostanik@join4.com.br>
+Date:   Sun Apr 21 23:03:32 2024 -0300
+
+    att
+
+[33mcommit c08c1ccd25866f05444a5c9ca94d459948162d5b[m
+Author: Pedro Ostanik <pedro.ostanik@join4.com.br>
+Date:   Sun Apr 21 22:34:30 2024 -0300
+
+    att
+
+[33mcommit dc4a0e8941909500ddb00d4bd5894d210d627330[m
+Author: Pedro Ostanik <pedro.ostanik@join4.com.br>
+Date:   Sun Apr 21 22:28:04 2024 -0300
+
+    ajuste fonte original
+
+[33mcommit 200e4ac14999dd4c8e3078f5c9ff08facb16f55a[m
+Author: Pedro Ostanik <pedro.ostanik@join4.com.br>
+Date:   Sun Apr 21 22:25:31 2024 -0300
+
+    ajuste fonte original
+
+[33mcommit a6c4b76cd72ca237cd486dbeb28f31285a569346[m
+Author: Pedro Ostanik <pedro.ostanik@join4.com.br>
+Date:   Sun Apr 21 22:19:07 2024 -0300
+
+    att actions
+
+[33mcommit 10ec587ef9d82c23e25dde009a782e736dc8cb20[m
+Author: Pedro Ostanik <pedro.ostanik@join4.com.br>
+Date:   Sun Apr 21 20:57:29 2024 -0300
+
+    att actions
+
+[33mcommit 005f946bf2981b72c09428fc7dce53511e72cb33[m
+Author: Pedro Ostanik <pedro.ostanik@join4.com.br>
+Date:   Sun Apr 21 20:48:37 2024 -0300
+
+    att actions
+
+[33mcommit 294b1709fa8a1bf656def3ae93716aadf59ee379[m
+Author: Pedro Ostanik <pedro.ostanik@join4.com.br>
+Date:   Sun Apr 21 20:46:28 2024 -0300
+
+    att actions
+
+[33mcommit 7066310b1b61bb8264a733d4b96f652b13b738d1[m
+Author: Pedro Ostanik <pedro.ostanik@join4.com.br>
+Date:   Sun Apr 21 20:43:36 2024 -0300
+
+    att actions
+
+[33mcommit 3b9255ea5c69b17f5c4b80c07c079fec5db208e8[m
+Author: Pedro Ostanik <pedro.ostanik@join4.com.br>
+Date:   Sun Apr 21 20:39:25 2024 -0300
+
+    ativando pipeline
+
+[33mcommit 776599b1c35759b344f48172a5004876b89a175d[m
+Author: Pedro Ostanik <pedro.ostanik@join4.com.br>
+Date:   Tue Apr 16 22:15:24 2024 -0300
+
+    env_vars
+
+[33mcommit 9f1894e15ee125db319aa9b667da1ba71a00002d[m
+Author: Pedro Ostanik <pedro.ostanik@join4.com.br>
+Date:   Tue Apr 16 21:10:29 2024 -0300
+
+    env_vars
+
+[33mcommit d012ff21832d4824c6c57f288e4dd13919cf2a32[m
+Author: Pedro Ostanik <pedro.ostanik@join4.com.br>
+Date:   Tue Apr 16 20:55:14 2024 -0300
+
+    new yaml
+
+[33mcommit 01a36c1f5daa5cc88fcf4f01c2e4e5713e3152b7[m
+Author: Pedro Ostanik <pedro.ostanik@join4.com.br>
+Date:   Tue Apr 16 20:14:36 2024 -0300
+
+    path
+
+[33mcommit 54176ea37a8092ce6450582dee1f319a490f139a[m
+Author: Pedro Ostanik <pedro.ostanik@join4.com.br>
+Date:   Tue Apr 16 19:51:13 2024 -0300
+
+    new main&yaml
+
+[33mcommit b36dcd6a7ae5116e5981be742278e4dd00ebc2ad[m
+Author: Pedro Ostanik <pedro.ostanik@join4.com.br>
+Date:   Tue Apr 16 09:40:56 2024 -0300
+
+    data
+
+[33mcommit f5f593a7f719b9c197a7f5521d40c3f963042bba[m
+Author: Pedro Ostanik <pedro.ostanik@join4.com.br>
+Date:   Tue Apr 16 09:39:13 2024 -0300
+
+    data
+
+[33mcommit 34846f2f1c00c1beef6c959f90acf9c6433b156e[m
+Author: Pedro Ostanik <pedro.ostanik@join4.com.br>
+Date:   Tue Apr 16 08:42:02 2024 -0300
+
+    requeriments
+
+[33mcommit fbfa27a4de28b6774fec90709cba354aa1564dc2[m
+Author: Pedro Ostanik <pedro.ostanik@join4.com.br>
+Date:   Tue Apr 16 01:54:01 2024 -0300
+
+    file
+
+[33mcommit 2dda435aa5c8d2c814731b09a12f694b97b32c03[m
+Author: Pedro Ostanik <pedro.ostanik@join4.com.br>
+Date:   Tue Apr 16 01:30:20 2024 -0300
+
+    Commit
+
+[33mcommit f9ca09e1c0855ef9076d5c7f1c1cf4f48e887325[m
+Author: Pedro Ostanik <pedro.ostanik@join4.com.br>
+Date:   Mon Apr 15 20:46:59 2024 -0300
+
+    first commit
