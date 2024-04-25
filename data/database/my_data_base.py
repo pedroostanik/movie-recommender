@@ -9,9 +9,12 @@ class MyDataBase():
 
     def __init__(self):   
         logging.basicConfig(level=logging.DEBUG)
-        
+
         DB_USER = os.environ.get('DB_USER')
         DB_PASSWORD = os.environ.get('DB_PASSWORD')
+
+        DB_USER = 'master-user'
+        DB_PASSWORD = 'master-user'
 
         logging.debug(f'DB_USER: {DB_USER}')
         logging.debug(f'DB_PASSWORD: {DB_PASSWORD}')
