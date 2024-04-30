@@ -89,9 +89,12 @@ class SurpriseRecommender():
 
         return movies_list
     
+    def show_movies(self):
+        return self.movies
+    
     def execute_knn(self, t_user, n_recommendations=10):        
-        
-        self.data = Dataset.load_from_df(self.ratings[["userId", "movieId", "rating"]], self.reader)
+        print(f'self ratings: {self.ratings}')
+        self.data = Dataset.load_from_df(self.ratings[["userid", "itemid", "rating"]], self.reader)
         train_set = self.data.build_full_trainset()        
 
         # Obtenha os itens que o usuário já classificou
@@ -134,51 +137,31 @@ class SurpriseRecommender():
         movies_list = []
         for previsao in top_n_predictions:
             print(f'Item: {previsao.iid}, Previsão de Classificação: {previsao.est}')
-            movie_title = self.movies.query(f'movieId=={previsao.iid}')['title'].iloc[0]
+            movie_title = self.movies.query(f'itemid=={previsao.iid}')['title'].iloc[0]
             movies_list.append(movie_title)
 
-        return movies_list
+        return movies_list  
     
-    def new_rating(self, t_user, itemId, rating):
-
-        old_df = self.ratings
-        user_df = pd.DataFrame({"userId": t_user,
-                                "movieId": itemId,
-                                "rating": rating
-                                })
-        new_df = pd.concat([old_df, user_df])
-
-        self.data = Dataset.load_from_df(new_df[["userId", "movieId", "rating"]], self.reader)  
-        model = KNNBasic()
-        cv_results = cross_validate(model, self.data, measures=['RMSE', 'MAE'], cv=5, verbose=True)
-
-        # Print the average RMSE and MAE scores
-        print('Average RMSE:', cv_results['test_rmse'].mean())
-        print('Average MAE:', cv_results['test_mae'].mean())      
     
-    def new_rating_new_user(self, itemId, rating):
+    def new_rating(self, itemId, rating, user_exit, user_id):
 
-        old_df = self.ratings
-        trainset = self.data.build_full_trainset()
+        mdb = MyDataBase()
+        mdb.insert_rating(itemId, rating, user_exit, user_id)
 
-        # Último idUser
-        last_id_user = trainset.n_users
-        new_id_user = last_id_user + 1
-
-        user_df = pd.DataFrame({"userId": new_id_user,
-                                "movieId": itemId,
-                                "rating": rating
-                                })
-        new_df = pd.concat([old_df, user_df])
+        # user_df = pd.DataFrame({"userId": new_id_user,
+        #                         "movieId": itemId,
+        #                         "rating": rating
+        #                         })
+        # new_df = pd.concat([old_df, user_df])
 
 
-        self.data = Dataset.load_from_df(new_df[["userId", "movieId", "rating"]], self.reader)  
-        model = KNNBasic()
-        cv_results = cross_validate(model, self.data, measures=['RMSE', 'MAE'], cv=5, verbose=True)
+        # self.data = Dataset.load_from_df(new_df[["userId", "movieId", "rating"]], self.reader)  
+        # model = KNNBasic()
+        # cv_results = cross_validate(model, self.data, measures=['RMSE', 'MAE'], cv=5, verbose=True)
 
-        # Print the average RMSE and MAE scores
-        print('Average RMSE:', cv_results['test_rmse'].mean())
-        print('Average MAE:', cv_results['test_mae'].mean()) 
+        # # Print the average RMSE and MAE scores
+        # print('Average RMSE:', cv_results['test_rmse'].mean())
+        # print('Average MAE:', cv_results['test_mae'].mean()) 
 
 
 
